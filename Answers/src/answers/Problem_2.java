@@ -10,14 +10,77 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 */
 public class Problem_2 
 {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) 
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) 
     {
-        return null;
-    }
-    
-    public static void main(String[] args) 
-    {
-        System.out.println("test");
-                
+        int remainder = 0;
+        ListNode ans = new ListNode(0);
+        ListNode pointer;
+        pointer=ans;
+        
+        while(l1!=null && l2!=null)
+        {
+            pointer.val = l1.val+l2.val+remainder;
+            if(remainder==1)
+            {
+                remainder=0;
+            }
+            if(pointer.val>=10)
+            {
+                pointer.val-=10;
+                remainder=1;
+            }
+            if(l1.next!=null||l2.next!=null)
+            {
+                pointer.next = new ListNode(0);
+                pointer=pointer.next;
+            }
+            
+            l1=l1.next;
+            l2=l2.next;
+        }
+        while(l1!=null)
+        {
+            pointer.val = l1.val+remainder;
+            if(remainder==1)
+            {
+                remainder=0;
+            }
+            if(pointer.val>=10)
+            {
+                pointer.val-=10;
+                remainder=1;
+            }
+            if(l1.next!=null)
+            {
+                pointer.next = new ListNode(0); 
+                pointer=pointer.next;
+            }
+            l1=l1.next;
+        }
+        while(l2!=null)
+        {
+            pointer.val = l2.val+remainder;
+            if(remainder==1)
+            {
+                remainder=0;
+            }
+            if(pointer.val>=10)
+            {
+                pointer.val-=10;
+                remainder=1;
+            }
+            if(l2.next!=null)
+            {
+                pointer.next = new ListNode(0);
+                pointer=pointer.next;
+            }
+            l2=l2.next;
+        }
+        if(remainder==1)
+        {
+            pointer.next = new ListNode(1);
+        }
+        
+        return ans;
     }
 }
