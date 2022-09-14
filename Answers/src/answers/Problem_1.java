@@ -10,6 +10,8 @@ You can return the answer in any order.
 */
 public class Problem_1 
 {
+// brute force approach, goes through every pair of numbers in the array and adds them together and see if it
+// equals the target. if no solution is found returns null
     public int[] twoSum(int[] nums, int target) 
     {
         if(nums.length<2)
