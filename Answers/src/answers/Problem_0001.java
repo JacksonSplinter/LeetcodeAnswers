@@ -8,7 +8,7 @@ You may assume that each input would have exactly one solution, and you may not 
 
 You can return the answer in any order.
 */
-public class Problem_1 
+public class Problem_0001 
 {
 // brute force approach, goes through every pair of numbers in the array and adds them together and see if it
 // equals the target. if no solution is found returns null

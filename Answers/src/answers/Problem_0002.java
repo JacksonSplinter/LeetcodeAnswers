@@ -10,7 +10,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 */
 // goes through each node and adds them together, if the soltuion is over 10 then 10 is subtracted 
 // and the remainder is carried over. If one linked list is longer than the other the extra numbers are added in place
-public class Problem_2 
+public class Problem_0002 
 {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) 
     {

@@ -7,7 +7,7 @@ import java.util.Queue;
 @author Jackson Splinter
 Given a string s, find the length of the longest substring without repeating characters.
 */
-public class Problem_3 
+public class Problem_0003 
 {    
 // Sliding door approach, checks the string s and if a conflicting char is not found it is added to the queue
 // If a conlficting char is found it removes the left most char until the conflict is removed.
