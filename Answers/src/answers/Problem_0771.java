@@ -24,7 +24,7 @@ public class Problem_0771 {
                 queue.offer(c);
             }
         }
-         for (char c : stones.toCharArray()) 
+        for (char c : stones.toCharArray()) 
         {
             if (queue.contains(c)) 
             {
