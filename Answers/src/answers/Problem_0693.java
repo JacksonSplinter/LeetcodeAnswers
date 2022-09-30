@@ -14,7 +14,6 @@ public class Problem_0693
         while(n>0)
         {
             binary+=n%2;
-            System.out.println(binary);
             n=n/2;
         }
         for(int i=0;i<binary.length()-1;i++)
