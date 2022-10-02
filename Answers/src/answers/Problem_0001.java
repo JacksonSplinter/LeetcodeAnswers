@@ -2,9 +2,9 @@ package answers;
 /**
  * Given an array of integers nums and an integer target, return indices of the two numbers 
  * such that they add up to target.
- * 
+ * <p>
  * You may assume that each input would have exactly one solution, and you may not use the same element twice.
- * 
+ * <p>
  * You can return the answer in any order.
  * 
  * @author Jackson Splinter
@@ -23,8 +23,6 @@ public class Problem_0001
  * @param target    Integer of the target sum
  * @return          An array of two numbers that equal the target array <code>null</code> otherwise
  */
-// brute force approach, goes through every pair of numbers in the array and adds them together and see if it
-// equals the target. if no solution is found returns null
     public int[] twoSum(int[] nums, int target) 
     {
         if(nums.length<2)

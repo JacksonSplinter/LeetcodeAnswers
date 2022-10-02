@@ -1,15 +1,15 @@
 package answers;
 /**
  * Add two linked lists representing numbers together.
- * 
+ * <p>
  * You are given two non-empty linked lists representing two non-negative integers.
  * The digits are stored in reverse order, and each of their nodes contains a single digit.
  * Add the two numbers and return the sum as a linked list.
- * 
+ * <p>
  * You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+ * 
  * @author Jackson Splinter
  */
-
 public class Problem_0002 
 {
 /**
@@ -22,7 +22,7 @@ public class Problem_0002
  * 
  * @param l1    head node of linked list number 1
  * @param l2    head node of linked list number 2
- * @return      head node of the linked list with the answer
+ * @return      head node of the linked list with the answer, returns 0 if there are no numbers inputted.
  */
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) 
     {

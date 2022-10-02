@@ -1,10 +1,9 @@
 package answers;
 import java.util.LinkedList;
 import java.util.Queue;
-
 /**
  * Given a string s, find the length of the longest substring without repeating characters.
-
+ * 
  * @author Jackson Splinter
  */
 public class Problem_0003 
@@ -20,18 +19,18 @@ public class Problem_0003
      * O(n)
      * 
      * @param s String to be searched
-     * @return  The length of the longest substring found
+     * @return  The length of the longest substring found, 0 if none found
      */
-    
     public static int lengthOfLongestSubstring(String s)
     {
         Queue<Character> queue = new LinkedList<>();
         int ans = 0;
-        for (char c : s.toCharArray()) 
+        for (char c : s.toCharArray()) //goes through every char c in the string s
         {
             while (queue.contains(c)) 
             {
-                queue.poll();
+                queue.poll(); // if the queue contains the character, delete characters from the left until
+                              // until the duplicate is removed
             }
             queue.offer(c);
             if(queue.size()>ans)

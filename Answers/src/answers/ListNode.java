@@ -1,8 +1,9 @@
 package answers;
-
-/*
-@author Jackson Splinter
-*/
+/**
+ * Sets up a ListNode class.
+ * 
+ * @author Jackson Splinter
+ */
 public class ListNode 
 {
     int val;
