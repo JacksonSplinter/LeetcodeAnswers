@@ -1,7 +1,9 @@
 package answers;
-/* 
-@author jackson
-*/
+/**
+ * Sets up a TreeNode class.
+ * 
+ * @author Jackson SPlinter
+ */
 public class TreeNode 
 {
     int val;
@@ -16,4 +18,3 @@ public class TreeNode
         this.right = right;
      }
 }
-
