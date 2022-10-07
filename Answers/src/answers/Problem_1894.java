@@ -13,7 +13,7 @@ package answers;
  * <p>
  * Return the index of the student that will replace the chalk.
  * 
- * @author jackson
+ * @author Jackson Splinter
  */
 public class Problem_1894 
 {
