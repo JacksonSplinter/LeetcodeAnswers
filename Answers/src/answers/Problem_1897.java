@@ -16,12 +16,12 @@ public class Problem_1897
     /**
      * Returns <code>true</code> if you can make every string in the array words equal using any
      * number of operations, and <code>false</code> otherwise.
-     * <>
+     * <p>
      * Goes through every word and adds every character and their frequency to a hashmap.
      * then goes through the hashmap and makes sure the frequency of every character can be evenly divided
      * by the total number of words in the array. If it cant then it returns <code>false</code>,
      * if the whole hashmap is traversed without problem then it returns <code>true</code>.
-     * <>
+     * <p>
      * O(n^2+n)
      * 
      * @param words Array of words

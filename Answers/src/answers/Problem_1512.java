@@ -2,7 +2,7 @@ package answers;
 /**
  * Given an array of integers nums, return the number of good pairs.
  * <p>
- * A pair (i, j) is called good if nums[i] == nums[j] and i < j.
+ * A pair (i, j) is called good if nums[i] == nums[j] and i {@literal <} j.
  * 
  * @author Jackson Splinter
  */

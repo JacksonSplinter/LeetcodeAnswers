@@ -8,9 +8,9 @@ public class Problem_0083
 {
     /**
      * Removes duplicates from a linked list.
-     * <>
+     * <p>
      * Goes through the linked list and removes all duplicates by changing the next value.
-     * <>
+     * <p>
      * O(n)
      * 
      * @param head  head of a linked list

@@ -19,7 +19,11 @@ public class Problem_0232
     Stack<Integer> in;
     Stack<Integer> out;
     int front;
-
+    /**
+     * Constructs an object of type problem_232
+     * <p>
+     * O(1)
+     */
     public Problem_0232() 
     {
         in= new Stack<>();
@@ -29,7 +33,7 @@ public class Problem_0232
     /**
      * Pushes element x to the back of the queue.
      * 
-     * @param x 
+     * @param x integer added to the queue
      */
     public void push(int x) 
     {
